@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+  font-family: Calibri;
+}
+.login-page{
+  background-color: #48c6e2 !important;
+  width:100vw;
+  height:100vh;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card{
+    background: white;
+    width:300px;
+    height: 350px;
+    padding: 10px 15px; 
+    border-radius:5px;
+    position:relative;
+    box-shadow: 0 4px  8px rgba(0 ,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19)
+}
+
+.login-container{
+  background: #0d9dbc !important;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position:absolute;
+  top:-85px;
+  left:50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    border: 0px solid white; 
+
+}
+
+.logo{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+
+.title{
+    text-align: center;
+  margin-top: 80px;
+  margin-bottom:20px;
+  font-size: 32px;
+  color:black;
+  
+}
+
+.remember {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color:black;
+  justify-content: center;
+}
+
+.remember input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.remember label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+  width: 100%;
+  background: white;
+  border-radius: 4px;
+  height: 40px; 
+  overflow: hidden;
+   
+}
+
+.icon {
+  background: #0d9dbc;
+  color: white;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+    width: 20px; 
+}
+
+.input-field {
+  flex: 1;                         /* takes remaining width */
+  height: 80%;                    /* aligns perfectly */
+  background: #eef5ff;             /* same as your screenshot */
+  font-size: 14px;
+  border:none;
+  outline: none;
+  padding: 2px 12px;
+  border-radius: 4px;
+
+}
+.login-btn {
+  width: 200px;
+  background: #0d9dbc;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background: #0b89a6;
+}
+
+.login-card > .input-group,
+.login-card > .remember {
+  width: 230px;          /* same width as header area */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.version{
+  font-size: 12px;
+}
+
+.message-area {
+  position: relative;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}

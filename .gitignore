@@ -1,0 +1,20 @@
+# ======================
+# FRONTEND (React)
+# ======================
+frontend/node_modules   # dependencies (rebuildable)
+frontend/dist           # production build output
+frontend/.env           # secrets (API URLs, keys)
+
+# ======================
+# BACKEND (.NET)
+# ======================
+backend/bin             # compiled output
+backend/obj             # build temp files
+backend/.vs             # Visual Studio cache
+
+# ======================
+# OS / General
+# ======================
+.DS_Store               # mac
+Thumbs.db               # windows
+*.log                   # logs
