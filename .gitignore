@@ -1,16 +1,16 @@
 # ======================
 # FRONTEND (React)
 # ======================
-frontend/node_modules   # dependencies (rebuildable)
-frontend/dist           # production build output
-frontend/.env           # secrets (API URLs, keys)
+Frontend/node_modules   # dependencies (rebuildable)
+Frontend/dist           # production build output
+Frontend/.env           # secrets (API URLs, keys)
 
 # ======================
 # BACKEND (.NET)
 # ======================
-backend/bin             # compiled output
-backend/obj             # build temp files
-backend/.vs             # Visual Studio cache
+Backend/bin             # compiled output
+Backend/obj             # build temp files
+Backend/.vs             # Visual Studio cache
 
 # ======================
 # OS / General
