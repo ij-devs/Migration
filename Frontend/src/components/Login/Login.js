@@ -24,6 +24,7 @@ const handleLogin = async ()=>{
              if(user.isSuccess){
               setMessage("User logged in Succesfully");
              setMessageColor("green");
+             localStorage.setItem("token",user.token);
               navigate("/targetting");
              }
             else {
