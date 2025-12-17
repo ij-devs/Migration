@@ -22,7 +22,7 @@ const handleLogin = async ()=>{
              const user = await login(empCode,password);
 
              if(user.isSuccess){
-              setMessage("User logged in succesfully");
+              setMessage("User logged in Succesfully");
              setMessageColor("green");
               navigate("/targetting");
              }
