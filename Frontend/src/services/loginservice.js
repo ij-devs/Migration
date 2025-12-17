@@ -38,7 +38,7 @@ export async function login (empCode , password){
      
 }
     catch(error){
-      console.error("Login request failed ",error.message);
+      console.error("Login Request failed ",error.message);
 
       throw error;
     }
