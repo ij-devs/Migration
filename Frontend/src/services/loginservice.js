@@ -34,6 +34,7 @@ export async function login (empCode , password){
 
       throw new Error(errorMessage);
     }
+    console.log("Api called completed");
    return await response.json();
      
 }
