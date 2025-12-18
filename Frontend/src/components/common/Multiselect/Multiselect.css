@@ -1,0 +1,75 @@
+/* Container */
+.multiselect {
+  position: relative;
+  min-width: 150px;
+  font-family: Calibri, sans-serif;
+}
+
+/* Label above box */
+.multiselect-label {
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* Closed select box */
+.multiselectbox {
+  height: 30px;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #ffffff;
+  font-size: 13px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.multiselect-box:hover {
+  border-color: #0d9dbc;
+}
+.multiselect-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+}
+/* Dropdown panel */
+.multiselect-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 4px;
+
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+
+  max-height: 180px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+/* Each checkbox row */
+.multiselect-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.multiselect-option:hover {
+  background: #e9f6f9;
+}
+
+/* Checkbox styling */
+.multiselect-option input {
+  cursor: pointer;
+}

@@ -1,0 +1,58 @@
+.app-header {
+width: 100%;
+background-color: white;
+height:80px;              /* fixed & clean */
+display: flex;
+align-items: center;
+padding: 0 24px;      
+display: flex;     /* horizontal only */
+box-sizing: border-box;
+position: relative;  
+border-top: 8px solid #0d9dbc;
+border-bottom: 8px solid #0d9dbc;
+}
+
+.logo-box img {
+height: 48px;              /* 👈 KEY FIX */
+width: auto;
+display: block;
+ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  /* 👇 lifted effect */
+  transform: translateY(-2px);
+}
+
+
+
+.header-title {
+  position: absolute;
+
+  /* anchor at center */
+  left: 20%;
+
+  /* REMOVE translateX */
+  transform: none;
+
+  width: 70%;
+
+  background-color: #0d9dbc;
+  color: white;
+
+  padding: 10px 40px;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: 600;
+
+   text-align: center;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
