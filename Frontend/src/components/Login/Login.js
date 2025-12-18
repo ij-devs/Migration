@@ -24,6 +24,9 @@ const handleLogin = async ()=>{
              if(user.isSuccess){
               setMessage("User logged in Succesfully");
              setMessageColor("green");
+
+            console.log("The checkpoint");
+
              localStorage.setItem("token",user.token);
               navigate("/targetting");
              }
