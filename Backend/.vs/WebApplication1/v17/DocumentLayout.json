@@ -15,6 +15,26 @@
       "RelativeMoniker": "D:0:0:{743936D2-6E2E-449E-A33A-A736C580C96D}|WebApplication1\\Glenmark_Targetting.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{743936D2-6E2E-449E-A33A-A736C580C96D}|WebApplication1\\Glenmark_Targetting.csproj|c:\\migration\\backend\\webapplication1\\models\\targetting\\targettingfiltersresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743936D2-6E2E-449E-A33A-A736C580C96D}|WebApplication1\\Glenmark_Targetting.csproj|solutionrelative:webapplication1\\models\\targetting\\targettingfiltersresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743936D2-6E2E-449E-A33A-A736C580C96D}|WebApplication1\\Glenmark_Targetting.csproj|c:\\migration\\backend\\webapplication1\\models\\targetting\\targettingfiltersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743936D2-6E2E-449E-A33A-A736C580C96D}|WebApplication1\\Glenmark_Targetting.csproj|solutionrelative:webapplication1\\models\\targetting\\targettingfiltersdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743936D2-6E2E-449E-A33A-A736C580C96D}|WebApplication1\\Glenmark_Targetting.csproj|c:\\migration\\backend\\webapplication1\\models\\common\\filteroptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743936D2-6E2E-449E-A33A-A736C580C96D}|WebApplication1\\Glenmark_Targetting.csproj|solutionrelative:webapplication1\\models\\common\\filteroptiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743936D2-6E2E-449E-A33A-A736C580C96D}|WebApplication1\\Glenmark_Targetting.csproj|c:\\migration\\backend\\webapplication1\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743936D2-6E2E-449E-A33A-A736C580C96D}|WebApplication1\\Glenmark_Targetting.csproj|solutionrelative:webapplication1\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{743936D2-6E2E-449E-A33A-A736C580C96D}|WebApplication1\\Glenmark_Targetting.csproj|c:\\migration\\backend\\webapplication1\\models\\auth\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{743936D2-6E2E-449E-A33A-A736C580C96D}|WebApplication1\\Glenmark_Targetting.csproj|solutionrelative:webapplication1\\models\\auth\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{743936D2-6E2E-449E-A33A-A736C580C96D}|WebApplication1\\Glenmark_Targetting.csproj|c:\\migration\\backend\\webapplication1\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{743936D2-6E2E-449E-A33A-A736C580C96D}|WebApplication1\\Glenmark_Targetting.csproj|solutionrelative:webapplication1\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -26,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,41 +66,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Migration\\Backend\\WebApplication1\\Program.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
-              "ToolTip": "C:\\Migration\\Backend\\WebApplication1\\Program.cs",
-              "RelativeToolTip": "WebApplication1\\Program.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Migration\\Backend\\WebApplication1\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Migration\\Backend\\WebApplication1\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "WebApplication1\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T05:45:44.663Z",
+              "WhenOpened": "2025-12-19T09:10:06.886Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DashboardController.cs",
-              "DocumentMoniker": "C:\\Migration\\Backend\\WebApplication1\\Controllers\\DashboardController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\DashboardController.cs",
-              "ToolTip": "C:\\Migration\\Backend\\WebApplication1\\Controllers\\DashboardController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\DashboardController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwA8AAAAmAAAAAAAAAA==",
+              "Title": "TargettingFiltersResponseDTO.cs",
+              "DocumentMoniker": "C:\\Migration\\Backend\\WebApplication1\\Models\\Targetting\\TargettingFiltersResponseDTO.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Targetting\\TargettingFiltersResponseDTO.cs",
+              "ToolTip": "C:\\Migration\\Backend\\WebApplication1\\Models\\Targetting\\TargettingFiltersResponseDTO.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Targetting\\TargettingFiltersResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T05:37:03.377Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TargettingController.cs",
-              "DocumentMoniker": "C:\\Migration\\Backend\\WebApplication1\\Controllers\\TargettingController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\TargettingController.cs",
-              "ToolTip": "C:\\Migration\\Backend\\WebApplication1\\Controllers\\TargettingController.cs",
-              "RelativeToolTip": "WebApplication1\\Controllers\\TargettingController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAgwCMAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T05:21:01.381Z",
+              "WhenOpened": "2025-12-19T08:56:41.968Z",
               "EditorCaption": ""
             },
             {
@@ -91,10 +98,87 @@
               "RelativeDocumentMoniker": "WebApplication1\\Controllers\\LoginController.cs",
               "ToolTip": "C:\\Migration\\Backend\\WebApplication1\\Controllers\\LoginController.cs",
               "RelativeToolTip": "WebApplication1\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAiwGoAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAIwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T12:14:48.639Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TargettingController.cs",
+              "DocumentMoniker": "C:\\Migration\\Backend\\WebApplication1\\Controllers\\TargettingController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\TargettingController.cs",
+              "ToolTip": "C:\\Migration\\Backend\\WebApplication1\\Controllers\\TargettingController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\TargettingController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAADwv1QAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T05:21:01.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FilterOptionDTO.cs",
+              "DocumentMoniker": "C:\\Migration\\Backend\\WebApplication1\\Models\\Common\\FilterOptionDTO.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Common\\FilterOptionDTO.cs",
+              "ToolTip": "C:\\Migration\\Backend\\WebApplication1\\Models\\Common\\FilterOptionDTO.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Common\\FilterOptionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T08:53:35.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Migration\\Backend\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "C:\\Migration\\Backend\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAADwv1QAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T05:45:44.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TargettingFiltersDto.cs",
+              "DocumentMoniker": "C:\\Migration\\Backend\\WebApplication1\\Models\\Targetting\\TargettingFiltersDto.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Targetting\\TargettingFiltersDto.cs",
+              "ToolTip": "C:\\Migration\\Backend\\WebApplication1\\Models\\Targetting\\TargettingFiltersDto.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Targetting\\TargettingFiltersDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T10:41:57.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Migration\\Backend\\WebApplication1\\Models\\Auth\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\Auth\\LoginRequest.cs",
+              "ToolTip": "C:\\Migration\\Backend\\WebApplication1\\Models\\Auth\\LoginRequest.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\Auth\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T09:04:28.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Migration\\Backend\\WebApplication1\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Migration\\Backend\\WebApplication1\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T05:37:03.377Z"
             }
           ]
         }
