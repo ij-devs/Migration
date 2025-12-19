@@ -17,7 +17,7 @@ function MultiSelect({label,options,selectedValues,onChange}){
             // adding the values 
              updatedValues =[...selectedValues , values];
          }
-            
+            console.log("event changed for parent ");
          // this will notify parent 
            onChange(updatedValues);
 
@@ -29,6 +29,7 @@ function MultiSelect({label,options,selectedValues,onChange}){
                 {/* display box */}
               <div className="multiselectbox" onClick={()=>{SetIsOpen(!isOpen)}}>
                 {
+                  
                     selectedValues.length ===0 ?"All":`${selectedValues.length} selected`
                 }
               </div>
@@ -38,13 +39,14 @@ function MultiSelect({label,options,selectedValues,onChange}){
                     <div className="multiselect-dropdown">
                         {/*Here we are using map function */}
 
-                      { options.map((option)=>(
-
+                      { 
+                      options.map((option)=>(
+                                  
                         <label key={option.value} className="multiselect-option">
 
                             <input type="checkbox"
                               checked = {selectedValues.includes(option.value)}
-                              onChange=  {()=> handleOnChange(option.value)}>
+                              onChange=  {()=>  handleOnChange(option.value)}>
                             </input> 
 
                               {option.label}
