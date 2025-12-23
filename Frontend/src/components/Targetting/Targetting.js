@@ -3,7 +3,8 @@ import "./Targetting.css";
 import "/Migration/Frontend/src/utils/auth.js";
 import  Header  from "../common/Header/Header.js";
 import MultiSelect from "../common/Multiselect/Multiselect.js";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getFilters } from "../../services/Targettingservice.js";
 
 export function calculateGrowth(ly,finalTarget){
 
@@ -24,21 +25,31 @@ const [selectedZones, setSelectedZones] = useState([]);
 const [selectedHQs, setSelectedHQs] = useState([]);
 const [selectedBrands, setSelectedBrands] = useState([]);
 
-  // dummy options for now
-  const zoneOptions = [
-    { value: "Z1", label: "North Zone" },
-    { value: "Z2", label: "South Zone" }
-  ];
+  
+  const [zoneOptions, setZoneOptions] = useState([]);
+  const [hqOptions, setHqOptions] = useState([]);
+  const [brandOptions, setBrandOptions] = useState([]);
 
-  const hqOptions = [
-    { value: "H1", label: "Delhi HQ" },
-    { value: "H2", label: "Mumbai HQ" }
-  ];
+  useEffect(()=>{
 
-  const brandOptions = [
-    { value: "B1", label: "Brand A" },
-    { value: "B2", label: "Brand B" }
-  ];
+   async function loadfilters(){
+
+    const data = await getFilters({
+      zones:selectedZones,
+      hqs:selectedHQs,
+      brands:selectedBrands
+    });
+
+
+    setZoneOptions(data?.zones ?? []);
+    setBrandOptions(data?.brands ??[]);
+    setHqOptions(data?.hqs ??[]);
+
+   }
+
+ loadfilters();
+
+  },[selectedZones,selectedHQs,selectedBrands])
 
 
     return (
@@ -49,6 +60,7 @@ const [selectedBrands, setSelectedBrands] = useState([]);
           
 
             <div className="filter-bar">
+                <div className="filters-left">
             <MultiSelect label = "zones" options ={zoneOptions} selectedValues={selectedZones}
             onChange={(values)=>{
                 setSelectedZones(values);
@@ -60,16 +72,18 @@ const [selectedBrands, setSelectedBrands] = useState([]);
 
             <MultiSelect label = "brands" options ={brandOptions} selectedValues={selectedBrands}
                 onChange={setSelectedBrands}></MultiSelect>
+                </div>
+                
 
-                 <button className="button-clear"
-            onClick={()=>{
+                <button className="button-clear"
+                onClick={()=>{
                 setSelectedBrands([]);
                 setSelectedHQs([]);
                 setSelectedZones([]);
-            }} >Clear</button>
+                }} >Clear</button>
+
             </div>
 
-           
 
         </div>
        

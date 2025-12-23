@@ -1,9 +1,26 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Multiselect.css";
 function MultiSelect({label,options,selectedValues,onChange}){
 
     // Hook for opening the dropdown open and close , bydefault it will be close 
     const[isOpen,SetIsOpen] = useState(false);
+
+    // useRef
+    const wrapperRef = useRef(null);
+
+    useEffect (()=>{
+          const HandleOnClickOutside = (event)=>{
+            if(isOpen && wrapperRef.current && !wrapperRef.current.contains(event.target)){
+              SetIsOpen(false)
+            }
+          };
+
+          document.addEventListener("mousedown",HandleOnClickOutside);
+
+          return  () =>{
+            document.removeEventListener("mousedown",HandleOnClickOutside);
+          }
+    },[isOpen]);
 
     // function to handleChange
     const handleOnChange = (values)=>{
@@ -18,14 +35,15 @@ function MultiSelect({label,options,selectedValues,onChange}){
              updatedValues =[...selectedValues , values];
          }
             console.log("event changed for parent ");
-         // this will notify parent 
+         // this will notify parent onChange Here is prop to pass the updated value 
            onChange(updatedValues);
 
     }
     return (
-        <div className="multiselect">
-            <label className="multiselect-label">{label}</label>
-
+      <>
+      <label className="multiselect-label">{`${label}:`}</label>
+        <div className="multiselect" ref={wrapperRef}>
+          
                 {/* display box */}
               <div className="multiselectbox" onClick={()=>{SetIsOpen(!isOpen)}}>
                 {
@@ -36,34 +54,29 @@ function MultiSelect({label,options,selectedValues,onChange}){
 
             {
                 isOpen && (
-                    <div className="multiselect-dropdown">
-                        {/*Here we are using map function */}
-
-                      { 
-                      options.map((option)=>(
-                                  
-                        <label key={option.value} className="multiselect-option">
-
-                            <input type="checkbox"
+                         <div className="multiselect-dropdown">
+                         {/*Here we are using map function */}
+                       {options.map((option)=>(
+                         <label key={option.value} className="multiselect-option">
+                           
+                              <input type="checkbox"
                               checked = {selectedValues.includes(option.value)}
-                              onChange=  {()=>  handleOnChange(option.value)}>
-                            </input> 
+                              onChange = {()=>
+                                handleOnChange(option.value)} ></input>
 
-                              {option.label}
-
-                        </label>
-
-                      ))
-                      }
-
+                                {option.label}
+                         </label>
+                       ))
+                       }
                     </div>
                 )
             }
-
+          
+          
 
 
         </div>
-    )
+    </>)
 }
 
 export default MultiSelect;
