@@ -35,14 +35,15 @@ function MultiSelect({label,options,selectedValues,onChange}){
              updatedValues =[...selectedValues , values];
          }
             console.log("event changed for parent ");
-         // this will notify parent 
+         // this will notify parent onChange Here is prop to pass the updated value 
            onChange(updatedValues);
 
     }
     return (
+      <>
+      <label className="multiselect-label">{`${label}:`}</label>
         <div className="multiselect" ref={wrapperRef}>
-            <label className="multiselect-label">{label}</label>
-
+          
                 {/* display box */}
               <div className="multiselectbox" onClick={()=>{SetIsOpen(!isOpen)}}>
                 {
@@ -55,9 +56,9 @@ function MultiSelect({label,options,selectedValues,onChange}){
                 isOpen && (
                          <div className="multiselect-dropdown">
                          {/*Here we are using map function */}
-                       { options.map((option)=>(
+                       {options.map((option)=>(
                          <label key={option.value} className="multiselect-option">
-                              
+                           
                               <input type="checkbox"
                               checked = {selectedValues.includes(option.value)}
                               onChange = {()=>
@@ -75,7 +76,7 @@ function MultiSelect({label,options,selectedValues,onChange}){
 
 
         </div>
-    )
+    </>)
 }
 
 export default MultiSelect;

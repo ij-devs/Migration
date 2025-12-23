@@ -7,16 +7,17 @@
 
 /* Label above box */
 .multiselect-label {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
   color: #333;
-  margin-bottom: 4px;
-  display: block;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 /* Closed select box */
 .multiselectbox {
-  height: 30px;
-  padding: 4px 8px;
+  height: 20px;
+  padding: 4px 6px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background: #ffffff;
@@ -63,6 +64,7 @@
   padding: 5px 8px;
   font-size: 13px;
   cursor: pointer;
+    white-space: nowrap;
 }
 
 .multiselect-option:hover {
